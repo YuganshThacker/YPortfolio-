@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yugansh Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/01da381823.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="Yugansh Logo" style="width: 150px; height: auto;">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Yugansh</span> <br>From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-----------------about------------------->
+    <div id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img id="aboutmeimg" src="images/aboutme.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Coffee fueled and code obsessed, I'm a developer who brings creativity and technical expertise to
+                        every project. I'm always looking for new challenges! Let's build something amazing together.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C language</span><br>System Programming</li>
+                            <li><span>C++</span><br>Management Systems</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br>Intern at XYZ Company</li>
+                            <li><span>2022</span><br>Freelance Web Developer</li>
+                            <li><span>2021</span><br>Open Source Contributor</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024-2027</span><br>Currently B-tech from Charusat University Gujarat</li>
+                            <li><span>2023</span><br>Class 12th from Excelsior Model School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------Services--------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div class="service-item">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Masterful creation of interactive and visually appealing user interfaces (UIs) using HTML, CSS, and
+                        JavaScript. Expertise in responsive design principles to ensure seamless experiences across desktop,
+                        tablet, and mobile devices.</p>
+                    <a href="#"  target="_main">Learn More</a>
+                </div>
+                <div class="service-item">
+                    <i class="fa-solid fa-hashtag"></i>
+                    <h2>C language</h2>
+                    <p>In-depth understanding of memory management (pointers, dynamic allocation) and other C/C++ concepts critical for
+                        system-level programming.
+                        Experience in working with hardware interfaces, device drivers, or embedded systems programming using C or C++.
+                    </p>
+                    <a href="#"  target="_main">Learn More</a>
+                </div>
+                <div class="service-item">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>C++</h2>
+                    <p>Mastery of C++ performance optimization techniques to create resource-efficient applications that excel in speed
+                        and responsiveness.
+                        Ability to leverage C++'s low-level control for tasks requiring maximum efficiency, such as system programming,
+                        game development, or performance-critical embedded systems.</p>
+                    <a href="#"  target="_main">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Car Showroom Manager</h3>
+                        <p>Explore your dream car! This C++ program lets you browse car models, filter by fuel type or price range, and view detailed specs - all in a user-friendly interface.</p>
+                        <a href="https://github.com/YuganshThacker/Sem-2-Practicals/blob/9666ffb716704df3beeab4d648267ec0f80ff98b/practical_3.cpp"  target="_main"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Digital Library Organizer</h3>
+                        <p>Organize your literary world!
+                            This C++ program helps you manage your books and magazines, both electronic and hardbound.  Easily add entries, categorize them, and keep track of important details like ISBN, ISSN, and DOI. Find everything you need in a flash!</p>
+                        <a href="https://github.com/YuganshThacker/Sem-2-Practicals/blob/9666ffb716704df3beeab4d648267ec0f80ff98b/practical14.cpp"  target="_main"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Staff Information Portal</h3>
+                        <p>Manage your team with ease!
+                            This C++ program lets you create a database of teaching and non-teaching staff. It simplifies tasks like adding employee details, searching by ID, and calculating average experience , all in a user-friendly interface.
+                            </p>
+                        <a href="https://github.com/YuganshThacker/Sem-2-Practicals/blob/9666ffb716704df3beeab4d648267ec0f80ff98b/practical13.cpp"  target="_main"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/YuganshThacker/Sem-2-Practicals" class="btn" target="_main">See More</a>  
+        </div>
+    </div>
+    <!--------------------contact--------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+               
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/yuganshthacker?igsh=dHduY2dkamVjMzk=" target="_main style="margin-left: 26px;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/yugansh-thacker-34740a28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  target="_main"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/YuganshThacker" target="_main"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://x.com/YuganshThacker" target="_main"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169 Made by <span style="color: #ff004f;">Yugansh</span></p>
+          </div>
+          
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz0BrvQTTGwy-_frv1gfc8uMpDRkhfrFUjXoFPWp96XPQutttYlRrdaNOHn9p-Zw5ZDCw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
