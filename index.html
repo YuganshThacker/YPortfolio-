@@ -4,158 +4,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yugansh Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Yugansh Thacker</title>
+    <link rel="stylesheet" href="test.css">
     <script src="https://kit.fontawesome.com/01da381823.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/f.png" type="image/x-icon">
 </head>
 
 <body>
+  
     <div id="header">
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo" alt="Yugansh Logo" style="width: 150px; height: auto;">
+                <div class="nav-bar">
+
+                  <div class="nav-menu">
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#projects">Work</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+              </div>
+            </div>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
+
+            <div class="text">
+            <div class="section">
             <div class="header-text">
                 <p>Software Developer</p>
                 <h1>Hi, I'm <span>Yugansh</span> <br>From India</h1>
             </div>
+          </div>
         </div>
     </div>
+  </div>
+    <div class="icon-button">
+        <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></i></a>
+        <a href="mailto:yv.thacker@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
     <!-----------------about------------------->
+    <div class="section">
     <div id="about" class="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
-                    <img id="aboutmeimg" src="images/aboutme.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Coffee fueled and code obsessed, I'm a developer who brings creativity and technical expertise to
-                        every project. I'm always looking for new challenges! Let's build something amazing together.
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>C language</span><br>System Programming</li>
-                            <li><span>C++</span><br>Management Systems</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2023</span><br>Intern at XYZ Company</li>
-                            <li><span>2022</span><br>Freelance Web Developer</li>
-                            <li><span>2021</span><br>Open Source Contributor</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2024-2027</span><br>Currently B-tech from Charusat University Gujarat</li>
-                            <li><span>2023</span><br>Class 12th from Excelsior Model School</li>
-                        </ul>
-                    </div>
-                </div>
+              
+                <div class="about-col-2"> 
+                  <div class="section">
+                    <h1 class="sub-title">About</h1>
+                  </div>
+                    <p class="about-text">
+                        I’m <span class="name">Yugansh</span> Thacker, a tech innovator and software developer passionate about bridging technology with real-world challenges. As a <strong>Smart India Hackathon 2024</strong> contributor, I focus on advancing education and rural connectivity through innovative solutions
+
+                        With expertise in Flutter and frontend development, I’ve built intuitive systems like <strong> online class platforms</strong> and <strong>college complaint portals</strong>. Managing <strong>VKey Traders</strong> reflects my entrepreneurial drive and adaptability.
+                        
+                        I’m committed to creating user-centric, impactful designs that leave a lasting mark in the tech landscape.</p>
+                 </div>
             </div>
         </div>
     </div>
-    <!---------------------------Services--------------------------------->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div class="service-item">
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Development</h2>
-                    <p>Masterful creation of interactive and visually appealing user interfaces (UIs) using HTML, CSS, and
-                        JavaScript. Expertise in responsive design principles to ensure seamless experiences across desktop,
-                        tablet, and mobile devices.</p>
-                    <a href="#"  target="_main">Learn More</a>
+  </div>
+   
+  <div class="section">
+    <section class="projects-section">
+        <div id="projects" class="projects-header">
+            <button class="projects-button"><i class="fa-solid fa-mug-hot"></i> My Projects</button>
+            <h2>Check out my <span class="highlight">latest work</span></h2>
+            <p>I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.</p>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-video">
+                    <video autoplay muted loop>
+                        <source src="images/project1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
-                <div class="service-item">
-                    <i class="fa-solid fa-hashtag"></i>
-                    <h2>C language</h2>
-                    <p>In-depth understanding of memory management (pointers, dynamic allocation) and other C/C++ concepts critical for
-                        system-level programming.
-                        Experience in working with hardware interfaces, device drivers, or embedded systems programming using C or C++.
-                    </p>
-                    <a href="#"  target="_main">Learn More</a>
-                </div>
-                <div class="service-item">
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h2>C++</h2>
-                    <p>Mastery of C++ performance optimization techniques to create resource-efficient applications that excel in speed
-                        and responsiveness.
-                        Ability to leverage C++'s low-level control for tasks requiring maximum efficiency, such as system programming,
-                        game development, or performance-critical embedded systems.</p>
-                    <a href="#"  target="_main">Learn More</a>
-                </div>
+                <h3>VkeyTraders</h3>
+                <p class="project-duration">August 2024 – Present</p>
+                <p>Designed and developed a dynamic and responsive platform for Vkey Traders, a leading provider of high-quality automotive tools and accessories. The website boasts a modern interface with well-structured categories, including Key Cutting Machines, Key Programming Tools, Xhorse Tools, and Cables & Accessories.</p>
+               
+                <a href="https://vkeytraders.com/" target="_main" class="visit-button">
+                  Visit <i class="fas fa-arrow-right"></i>
+              </a>
             </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-video">
+                    <video autoplay muted loop>
+                        <source src="images/project4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <h3>AI Chatbot</h3>
+                <p class="project-duration">July 2021 – March 2022</p>
+                <p>Built a robust and intelligent AI Chatbot to handle automated customer interactions, queries, and support tasks. The chatbot integrates advanced Natural Language Processing (NLP) techniques to deliver human-like conversations with users, ensuring seamless and engaging real-time communication.</p>
+                <a href="https://github.com/YuganshThacker/AI-Chatbot.git" target="_main" class="github-button">GitHub</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-video">
+                    <video autoplay muted loop>
+                        <source src="images/project2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <h3>AcadLink</h3>
+                <p class="project-duration">July 2021 – March 2022</p>
+                <p>Developed a College Complaint Management System, a streamlined platform designed to efficiently handle and resolve student grievances within the college. The system provides a user-friendly interface where students can submit complaints related to academics, facilities, or administrative issues.</p>
+                <a href="https://github.com/YuganshThacker/Complain-System.git" target="_main" class="github-button">GitHub</a>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-video">
+                    <video autoplay muted loop>
+                        <source  src="images/project3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <h3>ConvoFlow</h3>
+                <p class="project-duration">July 2021 – March 2022</p>
+                <p>Developed a dynamic real-time chat application using Node.js, designed for seamless and instant communication between users. The application integrates WebSocket technology to enable real-time messaging, ensuring a fast and interactive user experience. It features secure user authentication, responsive design, and smooth data handling, making it an efficient platform for collaborative conversations.</p>
+                <a href="https://github.com/YuganshThacker/Real-Time-Chat-.git" target="_main" class="github-button">GitHub</a>
+            </div>
+        </div> <!-- End of .projects-grid -->
+    </section> <!-- End of .projects-section -->
+</div> <!-- End of .section -->
+
+      
+ <div class="section">
+      </section>
+
+               <div class="see">           <!-- Existing "See More" button -->
+<a  class="btn1" id="see-more-btn" onclick="toggleWorkBoxes()">See More</a>
+
+<!-- New "See Less" button, initially hidden -->
+<a  class="btn1" id="see-less-btn" style="display: none;" onclick="toggleWorkBoxes()">See Less</a>
+</div>
         </div>
     </div>
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png">
-                    <div class="layer">
-                        <h3>Car Showroom Manager</h3>
-                        <p>Explore your dream car! This C++ program lets you browse car models, filter by fuel type or price range, and view detailed specs - all in a user-friendly interface.</p>
-                        <a href="https://github.com/YuganshThacker/Sem-2-Practicals/blob/9666ffb716704df3beeab4d648267ec0f80ff98b/practical_3.cpp"  target="_main"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                    
-                </div>
-                <div class="work">
-                    <img src="images/work-2.png">
-                    <div class="layer">
-                        <h3>Digital Library Organizer</h3>
-                        <p>Organize your literary world!
-                            This C++ program helps you manage your books and magazines, both electronic and hardbound.  Easily add entries, categorize them, and keep track of important details like ISBN, ISSN, and DOI. Find everything you need in a flash!</p>
-                        <a href="https://github.com/YuganshThacker/Sem-2-Practicals/blob/9666ffb716704df3beeab4d648267ec0f80ff98b/practical14.cpp"  target="_main"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png">
-                    <div class="layer">
-                        <h3>Staff Information Portal</h3>
-                        <p>Manage your team with ease!
-                            This C++ program lets you create a database of teaching and non-teaching staff. It simplifies tasks like adding employee details, searching by ID, and calculating average experience , all in a user-friendly interface.
-                            </p>
-                        <a href="https://github.com/YuganshThacker/Sem-2-Practicals/blob/9666ffb716704df3beeab4d648267ec0f80ff98b/practical13.cpp"  target="_main"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="https://github.com/YuganshThacker/Sem-2-Practicals" class="btn" target="_main">See More</a>  
+
+  </div>
+</div>
+   
+
+<div class="section">
+    <section id="skills" class="skills-section">
+        <h2>Skills & Technologies</h2>
+
+        <div class="section">
+        <p class="skills-description">
+          A showcase of my technical expertise and professional toolkit. These are the
+          technologies I've mastered and regularly use in my development journey.
+        </p>
+      </div>
+      <div class="section">
+        <div class="skills-category">
+          <h3>
+            <span class="category-icon"><i class="fa-solid fa-code"></i></span> Languages
+          </h3>
         </div>
+
+        <div class="section">
+          <div class="skills-items">
+            <span class="skill-item">Python</span>
+            <span class="skill-item">JavaScript</span>
+            <span class="skill-item">Java</span>
+            <span class="skill-item">C++</span>
+            <span class="skill-item">C</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="skills-category">
+          <h3>
+            <span class="category-icon"><i class="fa-brands fa-react"></i></span> Frameworks
+          </h3>
+        </div>
+
+        <div class="section">
+          <div class="skills-items">
+            <span class="skill-item">Node.js</span>
+            <span class="skill-item">Nest.js</span>
+            <span class="skill-item">React.js</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="skills-category">
+          <h3>
+            <span class="category-icon">🔧</span> Tools
+          </h3>
+          <div class="skills-items">
+            <span class="skill-item">PostgreSQL</span>
+            <span class="skill-item">Docker</span>
+          </div>
+        </div>
+      </div>
+      </section>
     </div>
-    <!--------------------contact--------------------------->
+
+
+  <div class="section">
+      <div class="education-section">
+        <h2>Education</h2>
+
+        <div class="section">
+        <div class="education-item">
+            <img src="images/charusat.jpeg" alt="CHARUSAT Logo" class="education-logo">
+            <div class="education-details">
+                <h3>CHARUSAT University</h3>
+                <p>B.Tech in Computer Engineering</p>
+            </div>
+            <span class="education-date">2024 - 2025</span>
+        </div>
+      </div>
+    </div>
+  </div>
+     <!--------------------contact--------------------------->
+     <div class="section">
     <div id="contact">
         <div class="container">
             <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-               
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/yuganshthacker?igsh=dHduY2dkamVjMzk=" target="_main style="margin-left: 26px;"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/yugansh-thacker-34740a28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  target="_main"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/YuganshThacker" target="_main"><i class="fa-brands fa-square-github"></i></a>
-                        <a href="https://x.com/YuganshThacker" target="_main"><i class="fa-brands fa-square-x-twitter"></i></a>
-                    </div>
-                    <a href="" class="btn btn2">Download CV</a>
+                <section class="get-in-touch">
+                    <button class="connect-btn"><i class="fa-brands fa-connectdevelop"></i>   Let's Connect</button>
+                    <div class="section">
+                    <h2>Get in Touch</h2>
+                    <p>
+                      Have a project in mind or just want to chat? Feel free to reach out through
+                      <a href="https://linkedin.com" target="_blank">LinkedIn</a>.
+                    </p>
+                  </section>
                 </div>
+
+                <div class="section">
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
@@ -165,8 +260,10 @@
                     </form>
                     <span id="msg"></span>
                 </div>
+              </div>
             </div>
         </div>
+      </div>
         <div class="copyright">
             <p>Copyright &#169 Made by <span style="color: #ff004f;">Yugansh</span></p>
           </div>
@@ -212,7 +309,49 @@
             })
             .catch(error => console.error('Error!', error.message))
         })
+
+
+     
       </script>
+
+      <script>function toggleWorkBoxes() {
+        var extraWork = document.getElementById("extra-work");
+        var seeMoreBtn = document.getElementById("see-more-btn");
+        var seeLessBtn = document.getElementById("see-less-btn");
+    
+        if (extraWork.style.display === "none" || extraWork.style.display === "") {
+            extraWork.style.display = "flex"; // Use "flex" or "block" depending on your layout
+            seeMoreBtn.style.display = "none"; // Hide "See More" button
+            seeLessBtn.style.display = "inline-block"; // Show "See Less" button
+        } else {
+            extraWork.style.display = "none"; // Hide extra work boxes
+            seeMoreBtn.style.display = "inline-block"; // Show "See More" button
+            seeLessBtn.style.display = "none"; // Hide "See Less" button
+        }
+    }
+    </script>
+
+    <script>document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('.section');
+    
+      const observerOptions = {
+        root: null, // Observing viewport
+        threshold: 0.1, // Trigger when 10% of the section is visible
+      };
+    
+      const observerCallback = (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show'); // Add "show" class when section is visible
+          }
+        });
+      };
+    
+      const observer = new IntersectionObserver(observerCallback, observerOptions);
+    
+      sections.forEach((section) => observer.observe(section)); // Observe all sections
+    });
+    </script>
 </body>
 
 </html>
